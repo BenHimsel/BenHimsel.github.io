@@ -2,10 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./rune.svg" />
+    <link rel="icon" type="image/svg+xml" href="/rune.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rune Generator</title>
-    <script type="module" crossorigin src="./assets/index-fef2274c.js"></script>
+    <script type="module" crossorigin src="./assets/index-1c3e4072.js"></script>
     <link rel="stylesheet" href="./assets/index-08a5c745.css" />
   </head>
   <body>
@@ -16,11 +16,11 @@
         </a>
         <h1>Rune Generator</h1>
         <div>
-          <label for="seed-input">Enter Table seed:</label>
+          <label for="table-seed-input">Enter Table seed:</label>
           <input
             type="text"
-            id="seed-input"
-            name="seed-input"
+            id="table-seed-input"
+            name="table-seed-input"
             value="my-seed-here-a"
           />
           <br />
@@ -37,21 +37,32 @@
             type="text"
             id="column-count-input"
             name="column-count-input"
-            value="6"
+            value="18"
           />
           <br />
-          <label id="rune-seed">Individual Rune seed:</label>
+          <label for="rune-seed-input">Individual Rune seed:</label>
           <input
             type="text"
             id="rune-seed-input"
             name="rune-seed-input"
             value=""
           />
+          <br />
+          <label for="rune-list-textarea">Individual Rune Table List:</label>
+          <textarea
+            id="rune-list-textarea"
+            name="rune-list-textarea"
+          ></textarea>
         </div>
         <div class="card">
-          <button id="generate-table" type="button">Generate Table</button>
+          <button id="generate-table" type="button">
+            Generate Table from Seed
+          </button>
+          <button id="generate-list" type="button">
+            Generate Table from List
+          </button>
           <div class="card" id="rune-table-div"></div>
-          <button id="generate-rune" type="button">Generate Rune</button>
+          <button id="generate-rune" type="button">Add Rune to List</button>
           <div class="card" id="rune-div"></div>
         </div>
       </div>
