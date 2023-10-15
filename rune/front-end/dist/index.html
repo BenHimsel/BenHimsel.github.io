@@ -2,11 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/rune.svg" />
+    <link rel="icon" type="image/svg+xml" href="./rune.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rune Generator</title>
     <script type="module" crossorigin src="./assets/index-1c3e4072.js"></script>
-    <link rel="stylesheet" href="./assets/index-08a5c745.css" />
+    <link rel="stylesheet" href="./assets/index-08a5c745.css">
   </head>
   <body>
     <div id="app">
@@ -14,6 +14,7 @@
         <a href="https://benhimsel.github.io/rune/index.html" target="_blank">
           <img src="./rune.svg" class="logo" alt="Rune Logo" />
         </a>
+        <h1>Test deploy to folder</h1>
         <h1>Rune Generator</h1>
         <div>
           <label for="table-seed-input">Enter Table seed:</label>
@@ -53,6 +54,14 @@
             id="rune-list-textarea"
             name="rune-list-textarea"
           ></textarea>
+          <br />
+          <label for="font-name-input">Font name</label>
+          <input
+            type="text"
+            id="font-name-input"
+            name="font-name-input"
+            value=""
+          />
         </div>
         <div class="card">
           <button id="generate-table" type="button">
@@ -67,5 +76,6 @@
         </div>
       </div>
     </div>
+    
   </body>
 </html>
